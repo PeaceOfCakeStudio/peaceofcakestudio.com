@@ -1,0 +1,72 @@
+/*!
+ * Web Fonts from Fontspring.com
+ *
+ * All OpenType features and all extended glyphs have been removed.
+ * Fully installable fonts can be purchased at http://www.fontspring.com
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Fontspring. The fonts are protected under domestic and international trademark and
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2010-2017 Fontspring
+ *
+ * The fonts included are copyrighted by the vendor listed below.
+ *
+ * Vendor:      Synthview Type Design
+ * License URL: https://www.fontspring.com/licenses/synthview/webfont
+ */
+
+@font-face {
+    font-family: "Novecento Sans Wide";
+    font-weight: 200;
+    font-style: normal;
+    src: url("../fonts/NovecentoSansWide-Light.woff") format("woff"),
+         url("../fonts/NovecentoSansWide-Light.woff2") format("woff2"),
+         url("../fonts/NovecentoSansWide-Light.svg") format("svg");
+}
+
+@font-face {
+    font-family: "Novecento Sans Wide";
+    font-weight: 300;
+    font-style: normal;
+    src: url("../fonts/NovecentoSansWide-Book.woff") format("woff"),
+         url("../fonts/NovecentoSansWide-Book.woff2") format("woff2"),
+         url("../fonts/NovecentoSansWide-Book.svg") format("svg");
+}
+
+@font-face {
+    font-family: "Novecento Sans Wide";
+    font-weight: 400;
+    font-style: normal;
+    src: url("../fonts/NovecentoSansWide-Normal.woff") format("woff"),
+         url("../fonts/NovecentoSansWide-Normal.woff2") format("woff2"),
+         url("../fonts/NovecentoSansWide-Normal.svg") format("svg");
+}
+
+@font-face {
+    font-family: "Novecento Sans Wide";
+    font-weight: 500;
+    font-style: normal;
+    src: url("../fonts/NovecentoSansWide-Medium.woff") format("woff"),
+         url("../fonts/NovecentoSansWide-Medium.woff2") format("woff2"),
+         url("../fonts/NovecentoSansWide-Medium.svg") format("svg");
+}
+
+@font-face {
+    font-family: "Novecento Sans Wide";
+    font-weight: 600;
+    font-style: normal;
+    src: url("../fonts/NovecentoSansWide-DemiBold.woff") format("woff"),
+         url("../fonts/NovecentoSansWide-DemiBold.woff2") format("woff2"),
+         url("../fonts/NovecentoSansWide-DemiBold.svg") format("svg");
+}
+
+@font-face {
+    font-family: "Novecento Sans Wide";
+    font-weight: 700;
+    font-style: normal;
+    src: url("../fonts/NovecentoSansWide-Bold.woff") format("woff"),
+         url("../fonts/NovecentoSansWide-Bold.woff2") format("woff2"),
+         url("../fonts/NovecentoSansWide-Bold.svg") format("svg");
+}
