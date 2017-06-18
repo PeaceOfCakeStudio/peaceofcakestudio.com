@@ -4,7 +4,7 @@ html {
     box-sizing: border-box;
     height: 100%;
 
-    font-family: "Novecento Sans Wide";
+    font-family: "Novecento Sans Wide", Arial, Helvetica, sans-serif;
     font-size: calc(1em + 1vw);
 
     text-transform: lowercase;
