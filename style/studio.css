@@ -26,3 +26,122 @@ a:visited,
 a:hover {
     text-decoration: none;
 }
+
+#background,
+#background::after {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+#background {
+    background: white url('../images/background-1920w.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+#background::after {
+    background: url('../images/pattern.png') repeat top left;
+    content: '';
+}
+
+@media only screen and (orientation: portrait) {
+    #background {
+        background-image: url('../images/background-1920h.jpg');
+    }
+}
+
+@media only screen and (orientation: landscape) {
+    #background {
+        background-image: url('../images/background-1920w.jpg');
+    }
+}
+
+@media only screen and (max-height: 1366px) and (orientation: portrait) {
+    #background {
+        background-image: url('../images/background-1366h.jpg');
+    }
+}
+
+@media only screen and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2.0),
+       only screen and (max-height: 1366px) and (orientation: portrait) and (min-resolution: 192dpi),
+       only screen and (max-height: 1366px) and (orientation: portrait) and (min-resolution: 2dppx) {
+    #background {
+        background-image: url('../images/background-1366h@2x.jpg');
+    }
+}
+
+@media only screen and (max-width: 1366px) and (orientation: landscape) {
+    #background {
+        background-image: url('../images/background-1366w.jpg');
+    }
+}
+
+@media only screen and (max-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2.0),
+       only screen and (max-width: 1366px) and (orientation: landscape) and (min-resolution: 192dpi),
+       only screen and (max-width: 1366px) and (orientation: landscape) and (min-resolution: 2dppx) {
+    #background {
+        background-image: url('../images/background-1366w@2x.jpg');
+    }
+}
+
+@media only screen and (max-height: 768px) and (orientation: portrait) {
+    #background {
+        background-image: url('../images/background-768h.jpg');
+    }
+}
+
+@media only screen and (max-height: 768px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2.0),
+       only screen and (max-height: 768px) and (orientation: portrait) and (min-resolution: 192dpi),
+       only screen and (max-height: 768px) and (orientation: portrait) and (min-resolution: 2dppx) {
+    #background {
+        background-image: url('../images/background-768h@2x.jpg');
+    }
+}
+
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+    #background {
+        background-image: url('../images/background-768w.jpg');
+    }
+}
+
+@media only screen and (max-width: 768px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2.0),
+       only screen and (max-width: 768px) and (orientation: landscape) and (min-resolution: 192dpi),
+       only screen and (max-width: 768px) and (orientation: landscape) and (min-resolution: 2dppx) {
+    #background {
+        background-image: url('../images/background-768w@2x.jpg');
+    }
+}
+
+@media only screen and (max-height: 480px) and (orientation: portrait) {
+    #background {
+        background-image: url('../images/background-480h.jpg');
+    }
+}
+
+@media only screen and (max-height: 480px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2.0),
+       only screen and (max-height: 480px) and (orientation: portrait) and (min-resolution: 192dpi),
+       only screen and (max-height: 480px) and (orientation: portrait) and (min-resolution: 2dppx) {
+    #background {
+        background-image: url('../images/background-480h@2x.jpg');
+    }
+}
+
+@media only screen and (max-width: 480px) and (orientation: landscape) {
+    #background {
+        background-image: url('../images/background-480w.jpg');
+    }
+}
+
+@media only screen and (max-width: 480px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2.0),
+       only screen and (max-width: 480px) and (orientation: landscape) and (min-resolution: 192dpi),
+       only screen and (max-width: 480px) and (orientation: landscape) and (min-resolution: 2dppx) {
+    #background {
+        background-image: url('../images/background-480w@2x.jpg');
+    }
+}
