@@ -3,6 +3,9 @@
 html {
     box-sizing: border-box;
     height: 100%;
+
+    font-family: "Novecento Sans Wide";
+    text-transform: lowercase;
 }
 
 *,
@@ -16,9 +19,6 @@ body {
 
     height: 100%;
     margin: 0;
-
-    font-family: "Novecento Sans Wide";
-    text-transform: lowercase;
 }
 
 a:link,
