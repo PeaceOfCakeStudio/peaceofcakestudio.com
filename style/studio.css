@@ -5,6 +5,8 @@ html {
     height: 100%;
 
     font-family: "Novecento Sans Wide";
+    font-size: calc(1em + 1vw);
+
     text-transform: lowercase;
 }
 
