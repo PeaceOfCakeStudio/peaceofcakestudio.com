@@ -2,8 +2,10 @@ html {
     box-sizing: border-box;
     height: 100%;
 
+    color: #000000;
+
     font-family: "Novecento Sans Wide", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: calc(1em + 1vw);
+    font-size: calc(1em + 1vmax);
 
     text-transform: lowercase;
 }
@@ -12,6 +14,9 @@ html {
 *::before,
 *::after {
     box-sizing: inherit;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -154,10 +159,44 @@ a:hover {
     left: 0;
     z-index: 1000;
 
+    margin: 2.5vh;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+}
+
+#studio > header {
+    width: 50vw;
+}
+
+#studio > main {
+    text-align: center;
+}
+
+#studio > footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 2.5rem;
+}
+
+#social-links {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0 auto;
+
+    width: 10rem;
+}
+
+#copyright {
+    font-size: 0.5rem;
+
+    text-align: center;
+    text-transform: none;
 }
 
 .social-icon {
