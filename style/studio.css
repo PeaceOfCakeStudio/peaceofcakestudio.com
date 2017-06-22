@@ -218,7 +218,9 @@ a:hover {
 
 .icon-mail,
 .icon-facebook,
-.icon-instagram {
+.icon-instagram,
+.icon-telephone,
+.icon-location {
     transition: background-color 750ms ease-in-out;
 }
 
