@@ -70,3 +70,16 @@
          url("../fonts/NovecentoSansWide-Bold.woff") format("woff"),
          url("../fonts/NovecentoSansWide-Bold.svg") format("svg");
 }
+
+/*!
+ * Custom Web Fonts from IcoMoon.io
+ */
+
+@font-face {
+    font-family: "Social Icons";
+    font-weight: normal;
+    font-style: normal;
+    src: url("../fonts/SocialIcons.woff2") format("woff2"),
+         url("../fonts/SocialIcons.woff") format("woff"),
+         url("../fonts/SocialIcons.svg") format("svg");
+}

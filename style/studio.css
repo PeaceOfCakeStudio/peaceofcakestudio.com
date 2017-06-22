@@ -159,3 +159,74 @@ a:hover {
     align-items: center;
     justify-content: space-between;
 }
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    width: 1.5rem;
+    height: 1.5rem;
+
+    font-family: "Social Icons";
+    font-size: 0.8rem;
+
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.icon-mail,
+.icon-facebook,
+.icon-instagram {
+    transition: background-color 750ms ease-in-out;
+}
+
+.icon-mail:hover,
+.icon-facebook:hover,
+.icon-instagram:hover,
+.icon-telephone:hover,
+.icon-location:hover {
+    transition: background-color 250ms ease-in-out;
+}
+
+.icon-mail:hover {
+    background-color: #40a0b0;
+}
+
+.icon-facebook:hover {
+    background-color: #3b5998;
+}
+
+.icon-instagram:hover {
+    background-color: #d93175;
+}
+
+.icon-telephone:hover {
+    background-color: #7c53a2;
+}
+
+.icon-location:hover {
+    background-color: #cc8871;
+}
+
+.icon-mail::before {
+    content: "\e900";
+}
+
+.icon-facebook::before {
+    content: "\e901";
+}
+
+.icon-instagram::before {
+    content: "\e902";
+}
+
+.icon-telephone::before {
+    content: "\e903";
+}
+
+.icon-location::before {
+    content: "\e904";
+}
