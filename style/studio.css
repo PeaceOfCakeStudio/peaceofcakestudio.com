@@ -1,0 +1,273 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+
+    color: #000000;
+
+    font-family: "Novecento Sans Wide", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: calc(1em + 1vmax);
+
+    text-transform: lowercase;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    position: relative;
+
+    height: 100%;
+    margin: 0;
+}
+
+a:link,
+a:visited,
+a:hover {
+    text-decoration: none;
+}
+
+#background,
+#background::after {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+#background {
+    background: white url('../images/background-1920w.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+#background::after {
+    background: url('../images/pattern.png') repeat top left;
+    content: '';
+}
+
+@media only screen and (orientation: portrait) {
+    #background {
+        background-image: url('../images/background-1920h.jpg');
+    }
+}
+
+@media only screen and (orientation: landscape) {
+    #background {
+        background-image: url('../images/background-1920w.jpg');
+    }
+}
+
+@media only screen and (max-height: 1366px) and (orientation: portrait) {
+    #background {
+        background-image: url('../images/background-1366h.jpg');
+    }
+}
+
+@media only screen and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2.0),
+       only screen and (max-height: 1366px) and (orientation: portrait) and (min-resolution: 192dpi),
+       only screen and (max-height: 1366px) and (orientation: portrait) and (min-resolution: 2dppx) {
+    #background {
+        background-image: url('../images/background-1366h@2x.jpg');
+    }
+}
+
+@media only screen and (max-width: 1366px) and (orientation: landscape) {
+    #background {
+        background-image: url('../images/background-1366w.jpg');
+    }
+}
+
+@media only screen and (max-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2.0),
+       only screen and (max-width: 1366px) and (orientation: landscape) and (min-resolution: 192dpi),
+       only screen and (max-width: 1366px) and (orientation: landscape) and (min-resolution: 2dppx) {
+    #background {
+        background-image: url('../images/background-1366w@2x.jpg');
+    }
+}
+
+@media only screen and (max-height: 768px) and (orientation: portrait) {
+    #background {
+        background-image: url('../images/background-768h.jpg');
+    }
+}
+
+@media only screen and (max-height: 768px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2.0),
+       only screen and (max-height: 768px) and (orientation: portrait) and (min-resolution: 192dpi),
+       only screen and (max-height: 768px) and (orientation: portrait) and (min-resolution: 2dppx) {
+    #background {
+        background-image: url('../images/background-768h@2x.jpg');
+    }
+}
+
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+    #background {
+        background-image: url('../images/background-768w.jpg');
+    }
+}
+
+@media only screen and (max-width: 768px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2.0),
+       only screen and (max-width: 768px) and (orientation: landscape) and (min-resolution: 192dpi),
+       only screen and (max-width: 768px) and (orientation: landscape) and (min-resolution: 2dppx) {
+    #background {
+        background-image: url('../images/background-768w@2x.jpg');
+    }
+}
+
+@media only screen and (max-height: 480px) and (orientation: portrait) {
+    #background {
+        background-image: url('../images/background-480h.jpg');
+    }
+}
+
+@media only screen and (max-height: 480px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2.0),
+       only screen and (max-height: 480px) and (orientation: portrait) and (min-resolution: 192dpi),
+       only screen and (max-height: 480px) and (orientation: portrait) and (min-resolution: 2dppx) {
+    #background {
+        background-image: url('../images/background-480h@2x.jpg');
+    }
+}
+
+@media only screen and (max-width: 480px) and (orientation: landscape) {
+    #background {
+        background-image: url('../images/background-480w.jpg');
+    }
+}
+
+@media only screen and (max-width: 480px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2.0),
+       only screen and (max-width: 480px) and (orientation: landscape) and (min-resolution: 192dpi),
+       only screen and (max-width: 480px) and (orientation: landscape) and (min-resolution: 2dppx) {
+    #background {
+        background-image: url('../images/background-480w@2x.jpg');
+    }
+}
+
+#studio {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+
+    margin: 2.5vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#studio > header {
+    width: 50vw;
+}
+
+#studio > main {
+    text-align: center;
+}
+
+#studio > footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 2.5rem;
+}
+
+#social-links {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0 auto;
+
+    width: 10rem;
+}
+
+#copyright {
+    font-size: 0.5rem;
+
+    text-align: center;
+    text-transform: none;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    width: 1.5rem;
+    height: 1.5rem;
+
+    font-family: "Social Icons";
+    font-size: 0.8rem;
+
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.icon-mail,
+.icon-facebook,
+.icon-instagram,
+.icon-telephone,
+.icon-location {
+    transition: background-color 750ms ease-in-out;
+}
+
+.icon-mail:hover,
+.icon-facebook:hover,
+.icon-instagram:hover,
+.icon-telephone:hover,
+.icon-location:hover {
+    transition: background-color 250ms ease-in-out;
+}
+
+.icon-mail:hover {
+    background-color: #40a0b0;
+}
+
+.icon-facebook:hover {
+    background-color: #3b5998;
+}
+
+.icon-instagram:hover {
+    background-color: #d93175;
+}
+
+.icon-telephone:hover {
+    background-color: #7c53a2;
+}
+
+.icon-location:hover {
+    background-color: #cc8871;
+}
+
+.icon-mail::before {
+    content: "\e900";
+}
+
+.icon-facebook::before {
+    content: "\e901";
+}
+
+.icon-instagram::before {
+    content: "\e902";
+}
+
+.icon-telephone::before {
+    content: "\e903";
+}
+
+.icon-location::before {
+    content: "\e904";
+}
